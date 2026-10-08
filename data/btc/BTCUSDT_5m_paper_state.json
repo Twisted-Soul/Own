@@ -1,0 +1,13 @@
+{
+  "capital": 9980.163594977987,
+  "position": {
+    "signal_timestamp": "2026-10-07 12:40:00+00:00",
+    "entry_timestamp": "2026-10-07 12:45:00+00:00",
+    "entry_price": 83518.9,
+    "side": "SHORT",
+    "signal": "SELL"
+  },
+  "last_processed_signal_timestamp": "2026-10-07 12:40:00+00:00",
+  "last_processed_candle_timestamp": "2026-10-07 12:45:00+00:00",
+  "pending_signal": null
+}

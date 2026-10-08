@@ -1,0 +1,9 @@
+event,category,importance,source,release_time,reference_period,actual,forecast,previous,surprise
+CPI,inflation,high,BLS,,,,,,
+Core CPI,inflation,high,BLS,,,,,,
+Employment Situation,employment,high,BLS,,,,,,
+PPI,inflation,medium,BLS,,,,,,
+FOMC,monetary_policy,high,Federal Reserve,,,,,,
+PCE,inflation,high,BEA/FRED,,,,,,
+GDP,growth,high,BEA/FRED,,,,,,
+Retail Sales,consumer,medium,Census/FRED,,,,,,
