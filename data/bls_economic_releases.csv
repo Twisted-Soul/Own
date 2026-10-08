@@ -1,0 +1,63 @@
+event,series_id,observation_period,value,period,release_time,release_timezone,importance,release_status
+CPI,CUUR0000SA0,2025-01-01 00:00:00+00:00,317.671,M01,2025-02-12 13:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2025-01-01 00:00:00+00:00,158268.0,M01,2025-02-07 13:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2025-01-01 00:00:00+00:00,4.0,M01,2025-02-07 13:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2025-02-01 00:00:00+00:00,319.082,M02,2025-03-12 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2025-02-01 00:00:00+00:00,158310.0,M02,2025-03-07 13:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2025-02-01 00:00:00+00:00,4.2,M02,2025-03-07 13:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2025-03-01 00:00:00+00:00,319.799,M03,2025-04-10 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2025-03-01 00:00:00+00:00,158377.0,M03,2025-04-04 12:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2025-03-01 00:00:00+00:00,4.2,M03,2025-04-04 12:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2025-04-01 00:00:00+00:00,320.795,M04,2025-05-13 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2025-04-01 00:00:00+00:00,158485.0,M04,2025-05-02 12:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2025-04-01 00:00:00+00:00,4.2,M04,2025-05-02 12:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2025-05-01 00:00:00+00:00,321.465,M05,2025-06-11 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2025-05-01 00:00:00+00:00,158498.0,M05,2025-06-06 12:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2025-05-01 00:00:00+00:00,4.3,M05,2025-06-06 12:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2025-06-01 00:00:00+00:00,322.561,M06,2025-07-15 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2025-06-01 00:00:00+00:00,158478.0,M06,2025-07-03 12:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2025-06-01 00:00:00+00:00,4.1,M06,2025-07-03 12:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2025-07-01 00:00:00+00:00,323.048,M07,2025-08-12 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2025-07-01 00:00:00+00:00,158542.0,M07,2025-08-01 12:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2025-07-01 00:00:00+00:00,4.3,M07,2025-08-01 12:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2025-08-01 00:00:00+00:00,323.976,M08,2025-09-11 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2025-08-01 00:00:00+00:00,158472.0,M08,2025-09-05 12:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2025-08-01 00:00:00+00:00,4.3,M08,2025-09-05 12:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2025-09-01 00:00:00+00:00,324.8,M09,2025-10-24 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2025-09-01 00:00:00+00:00,158548.0,M09,2025-11-20 13:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2025-09-01 00:00:00+00:00,4.4,M09,2025-11-20 13:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2025-10-01 00:00:00+00:00,,M10,,America/New_York,high,missing_schedule
+Nonfarm Payrolls,CES0000000001,2025-10-01 00:00:00+00:00,158408.0,M10,,America/New_York,high,missing_schedule
+Unemployment Rate,LNS14000000,2025-10-01 00:00:00+00:00,,M10,,America/New_York,high,missing_schedule
+CPI,CUUR0000SA0,2025-11-01 00:00:00+00:00,324.122,M11,2025-12-18 13:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2025-11-01 00:00:00+00:00,158449.0,M11,2025-12-16 13:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2025-11-01 00:00:00+00:00,4.5,M11,2025-12-16 13:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2025-12-01 00:00:00+00:00,324.054,M12,2026-01-13 13:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2025-12-01 00:00:00+00:00,158432.0,M12,2026-01-09 13:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2025-12-01 00:00:00+00:00,4.4,M12,2026-01-09 13:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2026-01-01 00:00:00+00:00,325.252,M01,2026-02-13 13:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2026-01-01 00:00:00+00:00,158592.0,M01,2026-02-11 13:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2026-01-01 00:00:00+00:00,4.3,M01,2026-02-11 13:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2026-02-01 00:00:00+00:00,326.785,M02,2026-03-11 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2026-02-01 00:00:00+00:00,158436.0,M02,2026-03-06 13:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2026-02-01 00:00:00+00:00,4.4,M02,2026-03-06 13:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2026-03-01 00:00:00+00:00,330.213,M03,2026-04-10 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2026-03-01 00:00:00+00:00,158650.0,M03,2026-04-03 12:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2026-03-01 00:00:00+00:00,4.3,M03,2026-04-03 12:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2026-04-01 00:00:00+00:00,333.02,M04,2026-05-12 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2026-04-01 00:00:00+00:00,158798.0,M04,2026-05-08 12:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2026-04-01 00:00:00+00:00,4.3,M04,2026-05-08 12:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2026-05-01 00:00:00+00:00,335.123,M05,2026-06-10 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2026-05-01 00:00:00+00:00,158861.0,M05,2026-06-05 12:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2026-05-01 00:00:00+00:00,4.3,M05,2026-06-05 12:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2026-06-01 00:00:00+00:00,333.952,M06,2026-07-14 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2026-06-01 00:00:00+00:00,158892.0,M06,2026-07-02 12:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2026-06-01 00:00:00+00:00,4.2,M06,2026-07-02 12:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2026-07-01 00:00:00+00:00,333.918,M07,2026-08-12 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2026-07-01 00:00:00+00:00,158882.0,M07,2026-08-07 12:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2026-07-01 00:00:00+00:00,4.1,M07,2026-08-07 12:30:00+00:00,America/New_York,high,verified_schedule
+CPI,CUUR0000SA0,2026-08-01 00:00:00+00:00,334.98,M08,2026-09-11 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2026-08-01 00:00:00+00:00,159015.0,M08,2026-09-04 12:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2026-08-01 00:00:00+00:00,4.1,M08,2026-09-04 12:30:00+00:00,America/New_York,high,verified_schedule
+Nonfarm Payrolls,CES0000000001,2026-09-01 00:00:00+00:00,159044.0,M09,2026-10-02 12:30:00+00:00,America/New_York,high,verified_schedule
+Unemployment Rate,LNS14000000,2026-09-01 00:00:00+00:00,4.2,M09,2026-10-02 12:30:00+00:00,America/New_York,high,verified_schedule
