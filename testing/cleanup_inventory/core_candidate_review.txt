@@ -1,0 +1,415 @@
+﻿
+==========================================================================================
+FILE: examples\live_signal_engine.py
+==========================================================================================
+Total lines: 474
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: from pathlib import Path
+    2: import pandas as pd
+    3: import numpy as np
+   10: BASE_DIR = Path(__file__).resolve().parents[1]
+   12: LIVE_DATA = BASE_DIR / "data" / "btc" / "BTCUSDT_5m_live.csv"
+   13: LIVE_FEATURES = BASE_DIR / "data" / "btc" / "BTCUSDT_5m_live_features.csv"
+   14: LIVE_SIGNAL = BASE_DIR / "data" / "btc" / "BTCUSDT_5m_live_signal.csv"
+  328:     df = pd.read_csv(LIVE_DATA)
+  342:     features.to_csv(
+  444:         existing = pd.read_csv(LIVE_SIGNAL)
+  461:     signal_df.to_csv(
+  473: if __name__ == "__main__":
+--- First 12 lines (context) ---
+    1: from pathlib import Path
+    2: import pandas as pd
+    3: import numpy as np
+    4: 
+    5: 
+    6: # ============================================================
+    7: # CONFIG
+    8: # ============================================================
+    9: 
+   10: BASE_DIR = Path(__file__).resolve().parents[1]
+   11: 
+   12: LIVE_DATA = BASE_DIR / "data" / "btc" / "BTCUSDT_5m_live.csv"
+
+==========================================================================================
+FILE: examples\paper_trading_engine.py
+==========================================================================================
+Total lines: 833
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: from pathlib import Path
+    2: import json
+    3: import pandas as pd
+   10: BASE_DIR = Path(__file__).resolve().parents[1]
+   12: LIVE_DATA = BASE_DIR / "data" / "btc" / "BTCUSDT_5m_live.csv"
+   13: SIGNAL_DATA = BASE_DIR / "data" / "btc" / "BTCUSDT_5m_live_signal.csv"
+   15: PAPER_TRADES = BASE_DIR / "data" / "btc" / "BTCUSDT_5m_paper_trades.csv"
+   16: PAPER_STATE = BASE_DIR / "data" / "btc" / "BTCUSDT_5m_paper_state.json"
+   49:         with open(
+   77:     with open(
+  108:     candles = pd.read_csv(
+  112:     signals = pd.read_csv(
+  177:     return pd.read_csv(
+  184:     trades.to_csv(
+  832: if __name__ == "__main__":
+--- First 12 lines (context) ---
+    1: from pathlib import Path
+    2: import json
+    3: import pandas as pd
+    4: 
+    5: 
+    6: # ============================================================
+    7: # CONFIG
+    8: # ============================================================
+    9: 
+   10: BASE_DIR = Path(__file__).resolve().parents[1]
+   11: 
+   12: LIVE_DATA = BASE_DIR / "data" / "btc" / "BTCUSDT_5m_live.csv"
+
+==========================================================================================
+FILE: examples\technical_features.py
+==========================================================================================
+Total lines: 359
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: import pandas as pd
+    2: import numpy as np
+    3: from pathlib import Path
+   10: DATA_FILE = Path(__file__).resolve().parents[1] / "data" / "btc" / "BTCUSDT_5m_clean.csv"
+   11: OUTPUT_FILE = Path(__file__).resolve().parents[1] / "data" / "btc" / "BTCUSDT_5m_features.csv"
+   72: df = pd.read_csv(DATA_FILE)
+  308: df.to_csv(
+--- First 12 lines (context) ---
+    1: import pandas as pd
+    2: import numpy as np
+    3: from pathlib import Path
+    4: 
+    5: 
+    6: # ============================================================
+    7: # Configuration
+    8: # ============================================================
+    9: 
+   10: DATA_FILE = Path(__file__).resolve().parents[1] / "data" / "btc" / "BTCUSDT_5m_clean.csv"
+   11: OUTPUT_FILE = Path(__file__).resolve().parents[1] / "data" / "btc" / "BTCUSDT_5m_features.csv"
+   12: 
+
+==========================================================================================
+FILE: examples\build_1m_live_features.py
+==========================================================================================
+Total lines: 629
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: from pathlib import Path
+    2: import pandas as pd
+    3: import numpy as np
+    6: BASE_DIR = Path(__file__).resolve().parents[1]
+    9:     BASE_DIR
+   12:     / "BTCUSDT_1m_live.csv"
+   16:     BASE_DIR
+   19:     / "BTCUSDT_1m_live_features.csv"
+   32: df = pd.read_csv(INPUT_FILE)
+  541: df.to_csv(
+--- First 12 lines (context) ---
+    1: from pathlib import Path
+    2: import pandas as pd
+    3: import numpy as np
+    4: 
+    5: 
+    6: BASE_DIR = Path(__file__).resolve().parents[1]
+    7: 
+    8: INPUT_FILE = (
+    9:     BASE_DIR
+   10:     / "data"
+   11:     / "btc"
+   12:     / "BTCUSDT_1m_live.csv"
+
+==========================================================================================
+FILE: examples\kronos_live_monitor.py
+==========================================================================================
+Total lines: 199
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: from pathlib import Path
+    2: import time
+    3: import subprocess
+    4: import sys
+    5: import pandas as pd
+   12: BASE_DIR = Path(__file__).resolve().parents[1]
+   14: LIVE_DATA = BASE_DIR / "data" / "btc" / "BTCUSDT_5m_live.csv"
+   15: SIGNAL_SCRIPT = BASE_DIR / "examples" / "live_signal_engine.py"
+   30:         df = pd.read_csv(
+   76:             cwd=BASE_DIR,
+  198: if __name__ == "__main__":
+--- First 12 lines (context) ---
+    1: from pathlib import Path
+    2: import time
+    3: import subprocess
+    4: import sys
+    5: import pandas as pd
+    6: 
+    7: 
+    8: # ============================================================
+    9: # CONFIG
+   10: # ============================================================
+   11: 
+   12: BASE_DIR = Path(__file__).resolve().parents[1]
+
+==========================================================================================
+FILE: examples\kronos_paper_monitor.py
+==========================================================================================
+Total lines: 306
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: from pathlib import Path
+    2: import subprocess
+    3: import sys
+    4: import time
+    5: import pandas as pd
+   12: BASE_DIR = Path(__file__).resolve().parents[1]
+   15:     BASE_DIR
+   18:     / "BTCUSDT_5m_live.csv"
+   22:     BASE_DIR
+   28:     BASE_DIR
+   47:         df = pd.read_csv(
+   95:             cwd=BASE_DIR,
+  305: if __name__ == "__main__":
+--- First 12 lines (context) ---
+    1: from pathlib import Path
+    2: import subprocess
+    3: import sys
+    4: import time
+    5: import pandas as pd
+    6: 
+    7: 
+    8: # ============================================================
+    9: # CONFIG
+   10: # ============================================================
+   11: 
+   12: BASE_DIR = Path(__file__).resolve().parents[1]
+
+==========================================================================================
+FILE: examples\kronos_1m_reaction_monitor.py
+==========================================================================================
+Total lines: 279
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: from pathlib import Path
+    2: import subprocess
+    3: import time
+    4: import pandas as pd
+    7: BASE_DIR = Path(__file__).resolve().parents[1]
+   10:     BASE_DIR
+   13:     / "BTCUSDT_1m_live.csv"
+   17:     BASE_DIR
+   20:     / "BTCUSDT_1m_live_features.csv"
+   24:     BASE_DIR
+   60:         df = pd.read_csv(
+  114:                     BASE_DIR
+--- First 12 lines (context) ---
+    1: from pathlib import Path
+    2: import subprocess
+    3: import time
+    4: import pandas as pd
+    5: 
+    6: 
+    7: BASE_DIR = Path(__file__).resolve().parents[1]
+    8: 
+    9: LIVE_FILE = (
+   10:     BASE_DIR
+   11:     / "data"
+   12:     / "btc"
+
+==========================================================================================
+FILE: examples\kronos_1m_state_tracker.py
+==========================================================================================
+Total lines: 424
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: from pathlib import Path
+    2: import time
+    3: import subprocess
+    4: import pandas as pd
+    7: BASE_DIR = Path(__file__).resolve().parents[1]
+   10:     BASE_DIR
+   13:     / "BTCUSDT_1m_live.csv"
+   17:     BASE_DIR
+   23:     BASE_DIR
+   26:     / "BTCUSDT_1m_state_history.csv"
+   58:     history = pd.read_csv(
+   88:     history.to_csv(
+  111:         df = pd.read_csv(
+  173:                     BASE_DIR
+--- First 12 lines (context) ---
+    1: from pathlib import Path
+    2: import time
+    3: import subprocess
+    4: import pandas as pd
+    5: 
+    6: 
+    7: BASE_DIR = Path(__file__).resolve().parents[1]
+    8: 
+    9: LIVE_FILE = (
+   10:     BASE_DIR
+   11:     / "data"
+   12:     / "btc"
+
+==========================================================================================
+FILE: examples\kronos_news_intelligence.py
+==========================================================================================
+Total lines: 223
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: import json
+    2: from pathlib import Path
+    3: from datetime import datetime, timezone
+    4: from zoneinfo import ZoneInfo
+   21: PROJECT_ROOT = Path(__file__).resolve().parents[1]
+   23: OUTPUT_DIR = PROJECT_ROOT / "data" / "news"
+   24: OUTPUT_FILE = OUTPUT_DIR / "kronos_news_intelligence.json"
+  141:     OUTPUT_DIR.mkdir(
+  153:     with open(
+  222: if __name__ == "__main__":
+--- First 12 lines (context) ---
+    1: import json
+    2: from pathlib import Path
+    3: from datetime import datetime, timezone
+    4: from zoneinfo import ZoneInfo
+    5: 
+    6: 
+    7: # =============================================================================
+    8: # KRONOS WORLD NEWS INTELLIGENCE
+    9: # =============================================================================
+   10: #
+   11: # This module defines the structured format for world-news intelligence.
+   12: #
+
+==========================================================================================
+FILE: examples\kronos_news_ai.py
+==========================================================================================
+Total lines: 520
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: import json
+    2: import os
+    3: from pathlib import Path
+    4: from datetime import datetime, timezone
+    5: from zoneinfo import ZoneInfo
+    7: from openai import OpenAI
+   14: PROJECT_ROOT = Path(__file__).resolve().parents[1]
+   16: OUTPUT_DIR = PROJECT_ROOT / "data" / "news"
+   17: OUTPUT_FILE = OUTPUT_DIR / "kronos_news_intelligence.json"
+  310:     except json.JSONDecodeError:
+  334:     OUTPUT_DIR.mkdir(
+  357:     with open(
+  519: if __name__ == "__main__":
+--- First 12 lines (context) ---
+    1: import json
+    2: import os
+    3: from pathlib import Path
+    4: from datetime import datetime, timezone
+    5: from zoneinfo import ZoneInfo
+    6: 
+    7: from openai import OpenAI
+    8: 
+    9: 
+   10: # =============================================================================
+   11: # KRONOS WORLD NEWS AI
+   12: # =============================================================================
+
+==========================================================================================
+FILE: examples\bls_economic_data.py
+==========================================================================================
+Total lines: 144
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: import requests
+    2: import pandas as pd
+    3: from pathlib import Path
+    6: OUTPUT_FILE = Path("data/bls_economic_data.csv")
+   35:     data = response.json()
+  120:     df.to_csv(
+  143: if __name__ == "__main__":
+--- First 12 lines (context) ---
+    1: import requests
+    2: import pandas as pd
+    3: from pathlib import Path
+    4: 
+    5: 
+    6: OUTPUT_FILE = Path("data/bls_economic_data.csv")
+    7: 
+    8: # BLS public series IDs
+    9: SERIES = {
+   10:     "CPI": "CUUR0000SA0",
+   11:     "Unemployment Rate": "LNS14000000",
+   12:     "Nonfarm Payrolls": "CES0000000001",
+
+==========================================================================================
+FILE: examples\economic_events.py
+==========================================================================================
+Total lines: 82
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: import pandas as pd
+    2: from pathlib import Path
+    5: OUTPUT_FILE = Path("data/economic_events.csv")
+   72:     df.to_csv(OUTPUT_FILE, index=False)
+   81: if __name__ == "__main__":
+--- First 12 lines (context) ---
+    1: import pandas as pd
+    2: from pathlib import Path
+    3: 
+    4: 
+    5: OUTPUT_FILE = Path("data/economic_events.csv")
+    6: 
+    7: 
+    8: EVENTS = [
+    9:     {
+   10:         "event": "CPI",
+   11:         "category": "inflation",
+   12:         "importance": "high",
+
+==========================================================================================
+FILE: examples\experiment_position_manager.py
+==========================================================================================
+Total lines: 188
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: import pandas as pd
+    2: import numpy as np
+    3: from pathlib import Path
+    5: INPUT = Path("data/btc/BTCUSDT_5m_signals.csv")
+    6: OUTPUT = Path("data/btc/BTCUSDT_5m_position_manager_experiment.csv")
+  135:     df = pd.read_csv(INPUT)
+  183:     result.to_csv(OUTPUT, index=False)
+  187: if __name__ == "__main__":
+--- First 12 lines (context) ---
+    1: import pandas as pd
+    2: import numpy as np
+    3: from pathlib import Path
+    4: 
+    5: INPUT = Path("data/btc/BTCUSDT_5m_signals.csv")
+    6: OUTPUT = Path("data/btc/BTCUSDT_5m_position_manager_experiment.csv")
+    7: 
+    8: # Illustrative assumptions only. Replace with verified venue costs.
+    9: FEE_RATE = 0.0005
+   10: SLIPPAGE_RATE = 0.0002
+   11: MAX_HOLD_BARS = 12  # 12 x 5 minutes = 1 hour
+   12: 
+
+==========================================================================================
+FILE: examples\experiment_trade_ledger.py
+==========================================================================================
+Total lines: 206
+--- Relevant lines (imports, paths, I/O, entry points, arguments) ---
+    1: import pandas as pd
+    2: import numpy as np
+    3: from pathlib import Path
+    5: INPUT = Path("data/btc/BTCUSDT_5m_signals.csv")
+    6: TRADES_OUT = Path("data/btc/BTCUSDT_trade_ledger_experiment.csv")
+    7: EQUITY_OUT = Path("data/btc/BTCUSDT_trade_ledger_equity.csv")
+  116:     df = pd.read_csv(INPUT)
+  195:     out.to_csv("data/btc/BTCUSDT_position_manager_actions_v2.csv", index=False)
+  196:     trades.to_csv(TRADES_OUT, index=False)
+  197:     pd.DataFrame(equity_data).to_csv(EQUITY_OUT, index=False)
+  199:     print("\nSaved actions: data/btc/BTCUSDT_position_manager_actions_v2.csv")
+  205: if __name__ == "__main__":
+--- First 12 lines (context) ---
+    1: import pandas as pd
+    2: import numpy as np
+    3: from pathlib import Path
+    4: 
+    5: INPUT = Path("data/btc/BTCUSDT_5m_signals.csv")
+    6: TRADES_OUT = Path("data/btc/BTCUSDT_trade_ledger_experiment.csv")
+    7: EQUITY_OUT = Path("data/btc/BTCUSDT_trade_ledger_equity.csv")
+    8: 
+    9: MAX_HOLD_BARS = 12
+   10: COST_SCENARIOS = [0.0, 0.0002, 0.0007, 0.0010]
+   11: 
+   12: 

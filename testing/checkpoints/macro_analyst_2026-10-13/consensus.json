@@ -1,0 +1,33 @@
+
+{
+  "nfp": {
+    "_meta": {
+      "status": "demo",
+      "source_url": null,
+      "captured_at_utc": null
+    },
+    "payrolls_k": 150,
+    "unemployment": 4.3,
+    "ahe_mom": 0.3
+  },
+  "cpi": {
+    "_meta": {
+      "status": "demo",
+      "source_url": null,
+      "captured_at_utc": null
+    },
+    "cpi_mom": 0.3,
+    "core_cpi_mom": 0.3,
+    "cpi_yoy": 3.0,
+    "core_cpi_yoy": 3.1
+  },
+  "ppi": {
+    "_meta": {
+      "status": "demo",
+      "source_url": null,
+      "captured_at_utc": null
+    },
+    "ppi_mom": 0.2,
+    "core_ppi_mom": 0.2
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "nfp": {
+    "2026-09": {
+      "metrics": {
+        "period": "2026-09",
+        "prior_period": "2026-08",
+        "values": {
+          "payrolls_k": {
+            "value": 29.0,
+            "prev1": 133.0,
+            "prev2": -10.0
+          },
+          "unemployment": {
+            "value": 4.2,
+            "prev1": 4.1,
+            "prev2": 4.1
+          },
+          "ahe_mom": {
+            "value": 0.132,
+            "prev1": 0.319,
+            "prev2": 0.133
+          }
+        }
+      },
+      "analysis": {
+        "composite": null,
+        "tone": "unknown (consensus unverified)",
+        "components": {},
+        "consensus_status": "unverified"
+      },
+      "retrieved_utc": "2026-10-13T06:00:14+00:00",
+      "released_at_utc": "2026-10-02T12:30:00+00:00",
+      "release_source_url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+      "release_metadata_valid": true,
+      "source_checked": true,
+      "release_verified": true
+    }
+  },
+  "cpi": {
+    "2026-08": {
+      "metrics": {
+        "period": "2026-08",
+        "prior_period": "2026-07",
+        "values": {
+          "core_cpi_mom": {
+            "value": 0.29,
+            "prev1": 0.215,
+            "prev2": -0.017
+          },
+          "cpi_mom": {
+            "value": 0.396,
+            "prev1": 0.074,
+            "prev2": -0.422
+          },
+          "core_cpi_yoy": {
+            "value": 2.446,
+            "prev1": 2.478,
+            "prev2": 2.594
+          },
+          "cpi_yoy": {
+            "value": 3.397,
+            "prev1": 3.365,
+            "prev2": 3.531
+          }
+        }
+      },
+      "analysis": {
+        "composite": null,
+        "tone": "unknown (consensus unverified)",
+        "components": {},
+        "consensus_status": "unverified"
+      },
+      "retrieved_utc": "2026-10-13T06:00:29+00:00",
+      "released_at_utc": "2026-09-11T12:30:00+00:00",
+      "release_source_url": "https://www.bls.gov/news.release/cpi.toc.htm",
+      "release_metadata_valid": true,
+      "source_checked": true,
+      "release_verified": true
+    }
+  },
+  "ppi": {
+    "2026-08": {
+      "metrics": {
+        "period": "2026-08",
+        "prior_period": "2026-07",
+        "values": {
+          "core_ppi_mom": {
+            "value": 0.162,
+            "prev1": 0.265,
+            "prev2": 0.401
+          },
+          "ppi_mom": {
+            "value": 0.4,
+            "prev1": 0.075,
+            "prev2": -0.126
+          }
+        }
+      },
+      "analysis": {
+        "composite": null,
+        "tone": "unknown (consensus unverified)",
+        "components": {},
+        "consensus_status": "unverified"
+      },
+      "retrieved_utc": "2026-10-13T06:00:33+00:00",
+      "released_at_utc": "2026-09-10T12:30:00+00:00",
+      "release_source_url": "https://www.bls.gov/news.release/ppi.toc.htm",
+      "release_metadata_valid": true,
+      "source_checked": true,
+      "release_verified": true
+    }
+  }
+}
